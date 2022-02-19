@@ -1,0 +1,480 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Page1.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Page1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于通讯录管理系统"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "通讯录管理系统1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PAGE1_DIALOG DIALOGEX 0, 0, 106, 77
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "登录"
+FONT 12, "华文细黑", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "登录",IDOK,7,34,29,12,BS_FLAT
+    PUSHBUTTON      "退出",IDCANCEL,56,33,30,12,BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "修改密码",IDC_xiugaimima,32,56,40,12,BS_FLAT | NOT 
+                    WS_TABSTOP
+    CTEXT           "密码",IDC_STATIC,7,7,29,12,SS_CENTERIMAGE | WS_BORDER | 
+                    NOT WS_GROUP
+    EDITTEXT        IDC_EDIT1,57,7,28,12,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 140, 98
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "修改密码"
+FONT 12, "Arial"
+BEGIN
+    PUSHBUTTON      "确定",IDOK,15,71,37,14,BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "取消",IDCANCEL,82,71,38,14,BS_FLAT | NOT WS_TABSTOP
+    CTEXT           "旧密码",IDC_STATIC,15,7,25,12,WS_BORDER | NOT WS_GROUP | 
+                    WS_TABSTOP
+    CTEXT           "新密码",IDC_STATIC,15,31,25,11,WS_BORDER | NOT WS_GROUP | 
+                    WS_TABSTOP
+    CTEXT           "重复新密码",IDC_STATIC,15,52,41,11,WS_BORDER | NOT 
+                    WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,82,7,38,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,82,29,38,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,82,51,38,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 315, 162
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,61,14,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,61,37,60,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,178,35,48,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT4,61,62,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,178,64,49,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,61,87,61,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,178,85,75,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,61,112,44,49,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST1,178,109,48,40,LBS_NOINTEGRALHEIGHT | 
+                    LBS_WANTKEYBOARDINPUT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "完成修改",IDC_BUTTON1,265,61,50,14,BS_FLAT | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "完成添加",IDC_BUTTON2,265,103,50,14,BS_FLAT | NOT 
+                    WS_TABSTOP
+    CTEXT           "出生月",IDC_STATIC,19,62,29,12,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CTEXT           "出生日",IDC_STATIC,145,64,25,13,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CTEXT           "地址",IDC_STATIC,145,85,17,12,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CTEXT           "姓名",IDC_STATIC,19,13,31,12,SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "电话号码",IDC_STATIC,19,37,33,13,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CTEXT           "QQ",IDC_STATIC,19,86,12,12,SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "关系",IDC_STATIC,145,111,17,12,SS_CENTERIMAGE | 
+                    WS_BORDER
+    PUSHBUTTON      "添加新的关系",IDC_BUTTON3,235,133,50,14,BS_FLAT | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "显示原纪录",IDC_BUTTON5,265,19,50,14,BS_FLAT | NOT 
+                    WS_TABSTOP
+    CTEXT           "性别",IDC_STATIC,145,35,17,11,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CTEXT           "备注",IDC_STATIC,19,110,17,12,SS_CENTERIMAGE | 
+                    WS_BORDER
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 439, 198
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "通讯录"
+FONT 10, "System"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,7,0,354,198
+    PUSHBUTTON      "修改记录",IDC_BUTTON1,376,34,50,14,BS_FLAT | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "添加记录",IDC_BUTTON2,376,63,50,14,BS_FLAT | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "返回浏览页面",IDC_BUTTON3,376,92,50,14,BS_FLAT | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "退出",IDOK,376,149,50,14,BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "关掉音乐",IDC_MUSIC,376,121,51,13,BS_FLAT | NOT 
+                    WS_TABSTOP
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 406, 170
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,7,232,156
+    PUSHBUTTON      "查找记录",IDOK,254,16,69,14,BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "删除单条记录",IDCANCEL,254,64,69,14,BS_FLAT | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "显示全部信息",IDC_BUTTON1,254,88,69,14,BS_FLAT | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "更多功能",IDC_BUTTON2,254,136,69,14,BS_FLAT | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "清空通讯录",IDC_BUTTON3,254,112,69,14,BS_FLAT | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "删除查找到的记录",IDC_BUTTON4,254,40,69,14,BS_FLAT | 
+                    NOT WS_TABSTOP
+END
+
+IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 122, 81
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "添加关系种类"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "确定",IDOK,13,47,37,14,BS_FLAT | NOT WS_TABSTOP
+    CTEXT           "请添加新的关系",IDC_STATIC,7,14,57,13,SS_CENTERIMAGE | 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT1,74,13,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "取消",IDCANCEL,80,46,33,14,BS_FLAT | NOT WS_TABSTOP
+END
+
+IDD_DIALOG6 DIALOG DISCARDABLE  0, 0, 208, 127
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "查询"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,46,7,55,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,46,39,75,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST1,46,68,48,40,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "确定",IDOK,108,95,34,14,BS_FLAT | NOT WS_TABSTOP
+    CTEXT           "姓名",IDC_STATIC,13,7,17,13,SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "地址",IDC_STATIC,14,38,17,12,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "关系",IDC_STATIC,14,68,17,13,SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "通过组合查询您可以快速查看，你也可以只填一条或两条信息进行查看,查看结果显示在列表框上",
+                    IDC_STATIC,126,7,60,62,WS_BORDER
+    PUSHBUTTON      "取消",IDC_BUTTON1,157,95,32,14,BS_FLAT | NOT WS_TABSTOP
+END
+
+IDD_DIALOG7 DIALOG DISCARDABLE  0, 0, 126, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "消息"
+FONT 10, "黑体"
+BEGIN
+    PUSHBUTTON      "确定",IDOK,25,31,31,13,BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "取消",IDCANCEL,74,30,30,14,BS_FLAT | NOT WS_TABSTOP
+    LTEXT           "你确定要进行此操作吗?",IDC_STATIC,22,7,95,13
+END
+
+IDD_DIALOG8 DIALOG DISCARDABLE  0, 0, 156, 154
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "其它功能"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,53,121,50,14,BS_FLAT | NOT WS_TABSTOP
+    CTEXT           "目前容量为：",IDC_STATIC,29,35,47,11,SS_CENTERIMAGE | 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT1,78,34,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查看最近七天过生日的人",IDOK,20,92,110,14,BS_FLAT | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "建立文本文件",IDC_BUTTON1,50,64,50,14,BS_FLAT | NOT 
+                    WS_TABSTOP
+    CTEXT           "该通讯录总容量为500人",IDC_STATIC,30,7,85,14,
+                    SS_CENTERIMAGE | WS_BORDER
+END
+
+IDD_DIALOG9 DIALOG DISCARDABLE  0, 0, 180, 101
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "建立文本文件"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "确定",IDOK,40,71,50,14,BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "取消",IDCANCEL,110,71,35,14,BS_FLAT | NOT WS_TABSTOP
+    COMBOBOX        IDC_COMBO1,56,17,117,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,71,43,55,14,ES_AUTOHSCROLL
+    CTEXT           "新的文本名：",IDC_STATIC,19,43,49,12,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CTEXT           "请选择：",IDC_STATIC,19,17,33,12,SS_CENTERIMAGE | 
+                    WS_BORDER
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Page1 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Page1\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Page1.EXE\0"
+            VALUE "ProductName", "Page1 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PAGE1_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 99
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 438
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 379
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 115
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_DIALOG7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 119
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_DIALOG8, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_DIALOG9, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG9 DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 29, 0
+0xa8bd, 0xa2c1, 0xf9cb, 0xd0d3, 0xa8cd, 0xb6d1, 0xbcc2, 0xc9b3, 0xb1d4, 
+0xc4b5, 0xc4ce, 0xbeb1, 0xc4ce, 0xfebc, "\000" 
+    IDC_COMBO1, 0x403, 29, 0
+0xa8bd, 0xa2c1, 0xd5b8, 0xe9b2, 0xafd1, 0xbdb5, 0xc4b5, 0xc9b3, 0xb1d4, 
+0xc4b5, 0xc4ce, 0xbeb1, 0xc4ce, 0xfebc, "\000" 
+    0
+END
+
+IDD_DIALOG2 DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 3, 0
+0xaec5, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0xd0c4, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_MUSIC               WAVE    DISCARDABLE     "res\\b002_钢琴曲-遇见.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Page1(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Page1.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
