@@ -1,0 +1,138 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+MAINMENU MENU 
+BEGIN 
+    POPUP "&File" 
+    BEGIN 
+        MENUITEM "&New",                 CM_FILENEW 
+        MENUITEM "&Open...",             CM_FILEOPEN 
+        MENUITEM "&Save",                CM_FILESAVE, GRAYED 
+        MENUITEM "Save &As...",          CM_FILESAVEAS, GRAYED 
+        MENUITEM SEPARATOR 
+        MENUITEM "E&xit\tAlt+F4",        CM_EXIT 
+    END 
+ 
+    POPUP "&Edit" 
+    BEGIN 
+        MENUITEM "&Undo\tAlt+BkSp",      CM_EDITUNDO 
+        MENUITEM SEPARATOR 
+        MENUITEM "Cu&t\tShift+Del",      CM_EDITCUT 
+        MENUITEM "&Copy\tCtrl+Ins",      CM_EDITCOPY 
+        MENUITEM "&Paste\tShift+Ins",    CM_EDITPASTE 
+        MENUITEM SEPARATOR 
+        MENUITEM "Clear &All\tCtrl+Del", CM_EDITCLEAR 
+    END 
+ 
+    POPUP "&Fonts"
+    BEGIN
+        MENUITEM "&Font Change",         CM_FONTCHANGE
+    END
+ 
+    POPUP "&Help" 
+    BEGIN 
+        MENUITEM "&About...",            CM_HELPABOUT 
+    END 
+ 
+END 
+
+
+MAINMENU ACCELERATORS
+{
+  VK_DELETE, ID_EDIT_CUT,      VIRTKEY, SHIFT
+  VK_INSERT, ID_EDIT_COPY,     VIRTKEY, CONTROL
+  VK_INSERT, ID_EDIT_PASTE,    VIRTKEY, SHIFT
+  VK_DELETE, ID_EDIT_CLEAR,    VIRTKEY, CONTROL
+  VK_BACK,   ID_EDIT_UNDO,     VIRTKEY, ALT
+}
+
+IDD_ABOUT DIALOG DISCARDABLE  48, 113, 200, 92
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Help - About Pgm2a"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,72,70,50,14
+    LTEXT           "by Vic Broquard",IDC_STATIC,70,42,57,8
+    LTEXT           "Illustrates Choose Fonts with a CEdit Window",IDC_STATIC,33,20,228,11
+    GROUPBOX        "",IDC_STATIC,28,10,141,50
+END
+ 
+STRINGTABLE  // our apps
+{ 
+ IDS_MAINTITLE,    "Program Editor"
+ IDS_WINNAME,      "EditPgm"
+ IDS_INITFONT,     "System"
+ IDS_MSG_QUIT,     "Do you want to quit the application?"
+ IDS_MSG_QUERY,    "Query?"
+ IDS_MSG_NOTSAVE,  "File has not been saved. Save File now?"
+ IDS_MSG_ERROR,    "Edit Program - Error Message"
+ IDS_MSG_NOMEM,    "Out of memory. Close app. Free some memory. Try again."
+ IDS_MSG_FILEERR,  "File Save Error. Try File Save As with valid filename."
+ IDS_MSG_FILEOPEN, "File Open Error. Try again with valid filename."
+ IDS_MSG_FILEREAD, "File Open Error. Unable to input the file."
+ IDS_MSG_NOBAR,    "No memory for scrollbars. Free some memory and try again."
+ IDS_MSG_FILEWRT,  "File Save Error. Output failed - disk full. Try new disk."
+ IDS_MSG_FILEBIG,  "We can only handle files up to about 64K bytes."
+ IDS_UNTITLED,     " - (untitled)"
+
+}
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
