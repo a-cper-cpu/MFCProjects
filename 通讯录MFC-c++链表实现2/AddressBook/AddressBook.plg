@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AddressBook - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/AddressBook.res" /d "NDEBUG" /d "_AFXDLL" "F:\已完成\章节(程序)\ch5\AddressBook\AddressBook.rc"" 
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP62.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/AddressBook.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\已完成\章节(程序)\ch5\AddressBook\AddressBook.cpp"
+"F:\已完成\章节(程序)\ch5\AddressBook\AddressBookDoc.cpp"
+"F:\已完成\章节(程序)\ch5\AddressBook\AddressBookView.cpp"
+"F:\已完成\章节(程序)\ch5\AddressBook\MainFrm.cpp"
+"F:\已完成\章节(程序)\ch5\AddressBook\Person.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP62.tmp" 
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP63.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/AddressBook.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\已完成\章节(程序)\ch5\AddressBook\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP63.tmp" 
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP64.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/AddressBook.pdb" /machine:I386 /out:"Release/AddressBook.exe" 
+".\Release\AddressBook.obj"
+".\Release\AddressBookDoc.obj"
+".\Release\AddressBookView.obj"
+".\Release\MainFrm.obj"
+".\Release\Person.obj"
+".\Release\StdAfx.obj"
+".\Release\AddressBook.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP64.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AddressBook.cpp
+AddressBookDoc.cpp
+AddressBookView.cpp
+MainFrm.cpp
+Person.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+AddressBook.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
