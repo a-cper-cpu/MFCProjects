@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MFCtest03 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/MFCtest03.res" /d "NDEBUG" "C:\Users\»Æ×¿\Desktop\MFC×÷Òµ\MFCtest03\MFCtest03.rc"" 
+Creating temporary file "C:\Users\»Æ×¿\AppData\Local\Temp\RSPB378.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/MFCtest03.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\»Æ×¿\Desktop\MFC×÷Òµ\MFCtest03\MFCtest03.cpp"
+"C:\Users\»Æ×¿\Desktop\MFC×÷Òµ\MFCtest03\MFCtest03Dlg.cpp"
+]
+Creating command line "cl.exe @"C:\Users\»Æ×¿\AppData\Local\Temp\RSPB378.tmp"" 
+Creating temporary file "C:\Users\»Æ×¿\AppData\Local\Temp\RSPB389.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/MFCtest03.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\»Æ×¿\Desktop\MFC×÷Òµ\MFCtest03\StdAfx.cpp"
+]
+Creating command line "cl.exe @"C:\Users\»Æ×¿\AppData\Local\Temp\RSPB389.tmp"" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/MFCtest03.pdb" /machine:I386 /out:"Release/MFCtest03.exe"  ".\Release\MFCtest03.obj" ".\Release\MFCtest03Dlg.obj" ".\Release\StdAfx.obj" ".\Release\MFCtest03.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MFCtest03.cpp
+MFCtest03Dlg.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+MFCtest03.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
