@@ -1,0 +1,298 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GPACalculator.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\GPACalculator.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 GPACalculator"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "GPACalculator 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_GPACALCULATOR_DIALOG DIALOGEX 0, 0, 362, 370
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "GPACalculator(GPA计算器）"
+MENU IDR_MAIN_MENU
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "浏览...",IDC_BUTTON_OPEN,296,31,50,14
+    GROUPBOX        "第一步：载入分数文件",IDC_STATIC,7,14,348,46
+    EDITTEXT        IDC_EDIT_PATHNAME,22,31,262,14,ES_AUTOHSCROLL
+    GROUPBOX        "第二步：设置参比标准",IDC_STATIC,7,66,348,97
+    COMBOBOX        IDC_COMBO_STANDARD,58,81,97,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_S1,81,106,18,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_S2,117,106,18,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_S3,153,106,18,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_S4,189,106,18,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_S6,261,106,18,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_S7,297,106,18,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_S5,225,106,18,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_O2,99,128,18,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_O3,135,128,18,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_O4,171,128,18,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_O5,207,128,18,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_O7,279,128,18,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_O8,315,128,18,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_O6,243,128,18,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_O1,63,128,18,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,84,133,13,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,119,133,13,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,156,133,13,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,192,133,13,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,228,133,13,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,264,133,13,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,300,133,13,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,90,121,1,12
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,125,121,1,12
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,162,121,1,12
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,198,121,1,12
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,234,121,1,12
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,270,121,1,12
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,306,122,1,12
+    LTEXT           "标准分",IDC_STATIC,19,108,25,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,58,102,287,47
+    LTEXT           "原始分",IDC_STATIC,20,132,25,8
+    LTEXT           "参比标准",IDC_STATIC,20,84,33,8
+    GROUPBOX        "第三步：统计并显示",IDC_STATIC,7,177,348,186
+    LISTBOX         IDC_LIST_SCORE,197,206,145,147,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "分数列表",IDC_STATIC,252,191,33,8
+    EDITTEXT        IDC_EDIT_AVERAGE,77,215,67,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_GPA,77,242,67,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_TOTAL,77,269,67,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "加权平均分",IDC_STATIC,32,219,41,8
+    LTEXT           "GPA",IDC_STATIC,32,245,13,8
+    LTEXT           "总学分",IDC_STATIC,32,272,25,8
+    PUSHBUTTON      "统计",IDC_BUTTON_OK,71,319,50,25,0,WS_EX_DLGMODALFRAME
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,24,207,152,96
+    LTEXT           "统计信息",IDC_STATIC,77,191,33,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "GPACalculator Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GPACalculator\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GPACalculator.EXE\0"
+            VALUE "ProductName", "GPACalculator 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_GPACALCULATOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 363
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "退出(&X)",                    ID_MENUITEM_EXIT
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "使用说明(&E)",                ID_MENUITEM_MAN
+        MENUITEM "关于(&A)",                    ID_MENUITEM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GPACALCULATOR_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_STANDARD, 0x403, 3, 0
+0xdece, "\000" 
+    IDC_COMBO_STANDARD, 0x403, 12, 0
+0x2e34, 0xb130, 0xd7ea, 0xcbbc, 0xb7e3, 0x00a8, 
+    IDC_COMBO_STANDARD, 0x403, 12, 0
+0x2e34, 0xb133, 0xd7ea, 0xcbbc, 0xb7e3, 0x00a8, 
+    IDC_COMBO_STANDARD, 0x403, 16, 0
+0x2e34, 0xb830, 0xbdc4, 0xb1f8, 0xd7ea, 0xcbbc, 0xb7e3, 0x00a8, 
+    IDC_COMBO_STANDARD, 0x403, 11, 0
+0xc3d3, 0xa7bb, 0xd4d7, 0xa8b6, 0xe5d2, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 GPACalculator(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\GPACalculator.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
