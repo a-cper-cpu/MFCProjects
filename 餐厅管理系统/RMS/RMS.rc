@@ -1,0 +1,353 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RMS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\RMS.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 RMS"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "RMS 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_RMS_DIALOG DIALOGEX 0, 0, 293, 308
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "RMS(餐厅管理系统)"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         141,IDC_STATIC,"Static",SS_BITMAP,7,7,280,115
+END
+
+IDD_DIALOG_DISH DIALOG DISCARDABLE  0, 0, 281, 216
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "菜谱管理"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "",IDC_STATIC,18,16,8,8
+    LTEXT           "编号",IDC_STATIC,23,20,17,8
+    EDITTEXT        IDC_EDIT_CODE,49,16,64,14,ES_AUTOHSCROLL
+    LTEXT           "名称",IDC_STATIC,131,21,17,8
+    EDITTEXT        IDC_EDIT_KIND,49,36,64,14,ES_AUTOHSCROLL
+    LTEXT           "种类",IDC_STATIC,23,40,17,8
+    EDITTEXT        IDC_EDIT_NAME,155,18,99,14,ES_AUTOHSCROLL
+    LTEXT           "描述",IDC_STATIC,131,44,17,8
+    EDITTEXT        IDC_EDIT_DESC,155,39,99,33,ES_MULTILINE | ES_AUTOHSCROLL
+    LTEXT           "价格",IDC_STATIC,23,62,17,8
+    EDITTEXT        IDC_EDIT_PRICE,49,58,64,14,ES_AUTOHSCROLL
+    GROUPBOX        "菜谱",IDC_STATIC,7,6,267,72
+    CONTROL         "List1",IDC_LIST_DISP,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,84,267,96
+    PUSHBUTTON      "增加(&A)",IDC_BUTTON_ADD,17,188,36,14
+    PUSHBUTTON      "修改(&M)",IDC_BUTTON_MODIFY,75,188,36,14
+    PUSHBUTTON      "删除(&D)",IDC_BUTTON_DEL,133,188,36,14
+    PUSHBUTTON      "清空(&C)",IDC_BUTTON_CLEAR,227,188,36,14
+END
+
+IDD_DIALOG_DESK DIALOG DISCARDABLE  0, 0, 281, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "餐桌管理"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "",IDC_STATIC,19,13,8,8
+    LTEXT           "桌号",IDC_STATIC,24,19,17,8
+    EDITTEXT        IDC_EDIT_CODE,50,15,64,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NUM,50,37,64,14,ES_AUTOHSCROLL
+    LTEXT           "容量",IDC_STATIC,24,42,17,8
+    LTEXT           "描述",IDC_STATIC,126,20,17,8
+    EDITTEXT        IDC_EDIT_DESC,150,16,99,35,ES_AUTOHSCROLL
+    LTEXT           "空闲",IDC_STATIC,24,62,17,8
+    COMBOBOX        IDC_COMBO_FREE,50,59,64,57,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST_DISP,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,84,267,96
+    GROUPBOX        "餐桌",IDC_STATIC,7,7,267,70
+    PUSHBUTTON      "增加(&A)",IDC_BUTTON_ADD,17,188,36,14
+    PUSHBUTTON      "修改(&M)",IDC_BUTTON_MODIFY,75,188,36,14
+    PUSHBUTTON      "删除(&D)",IDC_BUTTON_DEL,133,188,36,14
+    PUSHBUTTON      "清空(&C)",IDC_BUTTON_CLEAR,227,188,36,14
+END
+
+IDD_DIALOG_ORDER DIALOG DISCARDABLE  0, 0, 281, 216
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "订菜管理"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_DISP,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,267,96
+    LTEXT           "桌号",IDC_STATIC,26,127,17,8
+    LTEXT           "菜谱号",IDC_STATIC,26,149,25,8
+    LTEXT           "数量",IDC_STATIC,26,170,17,8
+    EDITTEXT        IDC_EDIT_NUM,60,166,83,14,ES_AUTOHSCROLL
+    LTEXT           "日期",IDC_STATIC,26,190,17,8
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_DATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | 
+                    WS_TABSTOP,60,187,83,14
+    PUSHBUTTON      "增加(&A)",IDC_BUTTON_ADD,205,121,50,14
+    PUSHBUTTON      "修改(&M)",IDC_BUTTON_MODIFY,205,141,50,14
+    PUSHBUTTON      "删除(&D)",IDC_BUTTON_DEL,205,161,50,14
+    PUSHBUTTON      "清空(&C)",IDC_BUTTON_CLEAR,205,185,50,14
+    GROUPBOX        "操作",IDC_STATIC,7,106,267,103
+    EDITTEXT        IDC_EDIT_DESKCODE,60,122,83,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DISHCODE,60,144,83,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_PAY DIALOG DISCARDABLE  0, 0, 281, 216
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "结算管理"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "桌号",IDC_STATIC,26,18,17,8
+    EDITTEXT        IDC_EDIT_DESKCODE,60,14,83,14,ES_AUTOHSCROLL
+    LTEXT           "菜名",IDC_STATIC,26,40,17,8
+    LTEXT           "菜谱号",IDC_STATIC,150,17,25,8
+    EDITTEXT        IDC_EDIT_DISHNAME,60,36,83,14,ES_AUTOHSCROLL
+    LTEXT           "金额",IDC_STATIC,151,39,17,8
+    EDITTEXT        IDC_EDIT_MONEY,185,35,83,14,ES_AUTOHSCROLL
+    LTEXT           "日期",IDC_STATIC,26,62,17,8
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_DATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,60,59,83,
+                    14
+    GROUPBOX        "结账信息",IDC_STATIC,7,3,267,81
+    CONTROL         "List1",IDC_LIST_DISP,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,90,267,95
+    PUSHBUTTON      "结算(&P)",IDC_BUTTON_PAY,107,190,50,14
+    EDITTEXT        IDC_EDIT_DISHCODE,185,15,83,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "RMS Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "RMS\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RMS.EXE\0"
+            VALUE "ProductName", "RMS 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_RMS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 301
+    END
+
+    IDD_DIALOG_DISH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 209
+    END
+
+    IDD_DIALOG_DESK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_DIALOG_ORDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+
+    IDD_DIALOG_PAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_DESK DLGINIT
+BEGIN
+    IDC_COMBO_FREE, 0x403, 3, 0
+0xf1b7, "\000" 
+    IDC_COMBO_FREE, 0x403, 3, 0
+0xc7ca, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP              BITMAP  DISCARDABLE     "Head.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 RMS(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\RMS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

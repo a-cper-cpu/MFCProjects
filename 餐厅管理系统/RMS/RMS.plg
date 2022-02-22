@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RMS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/RMS.res" /d "NDEBUG" /d "_AFXDLL" "F:\已完成\章节(程序)\ch6\RMS\RMS.rc"" 
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSPB9.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/RMS.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\已完成\章节(程序)\ch6\RMS\DeskPage.cpp"
+"F:\已完成\章节(程序)\ch6\RMS\DeskSet.cpp"
+"F:\已完成\章节(程序)\ch6\RMS\DishPage.cpp"
+"F:\已完成\章节(程序)\ch6\RMS\DishSet.cpp"
+"F:\已完成\章节(程序)\ch6\RMS\OrderPage.cpp"
+"F:\已完成\章节(程序)\ch6\RMS\OrderSet.cpp"
+"F:\已完成\章节(程序)\ch6\RMS\PayPage.cpp"
+"F:\已完成\章节(程序)\ch6\RMS\PaySet.cpp"
+"F:\已完成\章节(程序)\ch6\RMS\RMS.cpp"
+"F:\已完成\章节(程序)\ch6\RMS\RMSDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSPB9.tmp" 
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSPBA.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/RMS.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\已完成\章节(程序)\ch6\RMS\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSPBA.tmp" 
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSPBB.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/RMS.pdb" /machine:I386 /out:"Release/RMS.exe" 
+".\Release\DeskPage.obj"
+".\Release\DeskSet.obj"
+".\Release\DishPage.obj"
+".\Release\DishSet.obj"
+".\Release\OrderPage.obj"
+".\Release\OrderSet.obj"
+".\Release\PayPage.obj"
+".\Release\PaySet.obj"
+".\Release\RMS.obj"
+".\Release\RMSDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\RMS.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSPBB.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DeskPage.cpp
+DeskSet.cpp
+DishPage.cpp
+DishSet.cpp
+OrderPage.cpp
+OrderSet.cpp
+PayPage.cpp
+PaySet.cpp
+RMS.cpp
+RMSDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+RMS.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
