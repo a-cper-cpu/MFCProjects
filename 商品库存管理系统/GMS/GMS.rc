@@ -1,0 +1,452 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GMS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\GMS.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 GMS"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "GMS 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_GMS_DIALOG DIALOGEX 0, 0, 314, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "GMS(商品库存管理系统)"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "用户名",IDC_STATIC,13,150,25,8
+    EDITTEXT        IDC_EDIT_LOGINNAME,43,148,50,12,ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,107,150,17,8
+    EDITTEXT        IDC_EDIT_PASSWD,129,148,51,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登录",IDC_BUTTON_OK,210,147,26,13
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,255,147,26,13
+    CONTROL         132,IDC_STATIC,"Static",SS_BITMAP,7,7,300,133
+END
+
+IDD_DIALOG_MAIN DIALOG DISCARDABLE  0, 0, 289, 203
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "主界面（商品库存管理系统）"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "库存商品",IDC_BUTTON_GOODSADD,15,22,50,14
+    PUSHBUTTON      "供货商家",IDC_BUTTON_PROVIDERADD,79,22,50,14
+    PUSHBUTTON      "商品入库",IDC_BUTTON_GOODSIN,143,22,50,14
+    PUSHBUTTON      "商品出库",IDC_BUTTON_GOODSOUT,207,22,50,14
+    PUSHBUTTON      "库存报警",IDC_BUTTON_ALERT,29,118,78,14
+    PUSHBUTTON      "商品信息",IDC_BUTTON_GOODS,15,71,50,14
+    PUSHBUTTON      "商家信息",IDC_BUTTON_PROVIDER,79,71,50,14
+    PUSHBUTTON      "入库信息",IDC_BUTTON_IN,143,71,50,14
+    PUSHBUTTON      "出库信息",IDC_BUTTON_OUT,207,71,50,14
+    PUSHBUTTON      "操作日志",IDC_BUTTON_LOG,15,163,50,14
+    PUSHBUTTON      "帮助",IDC_BUTTON_HELP,127,163,36,14
+    PUSHBUTTON      "关于",IDC_BUTTON_ABOUT,174,163,36,14
+    DEFPUSHBUTTON   "退出",IDC_BUTTON_EXIT,221,163,36,14
+    GROUPBOX        "操作",IDC_STATIC,7,7,275,43
+    GROUPBOX        "查询",IDC_STATIC,7,54,275,42
+    GROUPBOX        "特殊功能",IDC_STATIC,7,106,275,36
+    GROUPBOX        "系统",IDC_STATIC,7,146,275,45
+    PUSHBUTTON      "修改管理员密码",IDC_BUTTON_ADMIN,173,118,78,14
+END
+
+IDD_DIALOG_GOODS DIALOG DISCARDABLE  0, 0, 346, 262
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "商品操作"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "商品编号",IDC_STATIC,212,29,33,8
+    EDITTEXT        IDC_EDIT_CODE,263,26,53,14,ES_AUTOHSCROLL
+    LTEXT           "商品名称",IDC_STATIC,212,55,33,8
+    EDITTEXT        IDC_EDIT_NAME,263,52,53,14,ES_AUTOHSCROLL
+    LTEXT           "最大库容",IDC_STATIC,212,81,33,8
+    EDITTEXT        IDC_EDIT_MAXNUM,263,78,53,14,ES_AUTOHSCROLL
+    LTEXT           "最小库容",IDC_STATIC,212,107,33,8
+    EDITTEXT        IDC_EDIT_MINNUM,263,104,53,14,ES_AUTOHSCROLL
+    GROUPBOX        "操作",IDC_STATIC,193,7,146,248
+    PUSHBUTTON      "增加(&A)",IDC_BUTTON_ADD,218,145,40,14
+    PUSHBUTTON      "修改(&M)",IDC_BUTTON_MODIFY,283,145,40,14
+    PUSHBUTTON      " 删除(&D)",IDC_BUTTON_DELETE,239,184,57,14
+    PUSHBUTTON      "退出(&X)",IDC_BUTTON_EXIT,239,219,57,14
+    CONTROL         "List1",IDC_LIST_DISP,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,185,248
+END
+
+IDD_DIALOG_PROVIDER DIALOG DISCARDABLE  0, 0, 346, 262
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "供货商家"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "商家编号",IDC_STATIC,17,176,33,8
+    EDITTEXT        IDC_EDIT_CODE,55,172,60,14,ES_AUTOHSCROLL
+    LTEXT           "商家名称",IDC_STATIC,17,196,33,8
+    EDITTEXT        IDC_EDIT_NAME,55,192,60,14,ES_AUTOHSCROLL
+    LTEXT           "商家地址",IDC_STATIC,17,217,33,8
+    EDITTEXT        IDC_EDIT_ADDRESS,55,213,111,14,ES_AUTOHSCROLL
+    LTEXT           "负责人",IDC_STATIC,17,237,25,8
+    EDITTEXT        IDC_EDIT_PERSON,43,235,53,14,ES_AUTOHSCROLL
+    GROUPBOX        "操作",IDC_STATIC,7,163,332,92
+    PUSHBUTTON      "增加(&A)",IDC_BUTTON_ADD,220,181,40,14
+    PUSHBUTTON      "修改(&M)",IDC_BUTTON_MODIFY,268,181,40,14
+    PUSHBUTTON      " 删除(&D)",IDC_BUTTON_DELETE,220,203,40,14
+    PUSHBUTTON      "退出(&X)",IDC_BUTTON_EXIT,268,203,40,14
+    EDITTEXT        IDC_EDIT_PHONE,122,235,59,14,ES_AUTOHSCROLL
+    LTEXT           "电话",IDC_STATIC,102,237,24,14
+    EDITTEXT        IDC_EDIT_EMAIL,216,235,94,14,ES_AUTOHSCROLL
+    LTEXT           "Email",IDC_STATIC,191,237,21,8
+    CONTROL         "List1",IDC_LIST_DISP,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,332,153
+END
+
+IDD_DIALOG_IN DIALOG DISCARDABLE  0, 0, 283, 192
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "商品入库"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "入库商品",IDC_STATIC,32,25,33,8
+    COMBOBOX        IDC_COMBO_GOODS,69,22,161,66,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "入库时间",IDC_STATIC,32,48,33,8
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_DATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_TABSTOP,69,44,60,15
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER_TIME,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_TABSTOP | 0x8,131,44,100,15
+    LTEXT           "供应商",IDC_STATIC,32,72,25,8
+    COMBOBOX        IDC_COMBO_PROVIDER,69,69,161,47,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "数量",IDC_STATIC,32,95,17,8
+    EDITTEXT        IDC_EDIT_NUM,69,91,161,15,ES_AUTOHSCROLL
+    LTEXT           "价格",IDC_STATIC,32,120,17,8
+    PUSHBUTTON      "确定",IDC_BUTTON_OK,62,155,50,14
+    EDITTEXT        IDC_EDIT_PRICE,70,116,161,15,ES_AUTOHSCROLL
+    GROUPBOX        "入库商品信息",IDC_STATIC,18,11,249,132
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,158,155,50,14
+END
+
+IDD_DIALOG_OUT DIALOG DISCARDABLE  0, 0, 265, 197
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "商品出库"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "出库商品",IDC_STATIC,33,29,33,8
+    COMBOBOX        IDC_COMBO_GOODS,71,25,161,66,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "出库时间",IDC_STATIC,33,51,33,8
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_DATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_TABSTOP,71,47,60,15
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER_TIME,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_TABSTOP | 0x8,133,47,100,15
+    LTEXT           "负责人",IDC_STATIC,33,99,25,8
+    LTEXT           "出库数量",IDC_STATIC,33,123,33,8
+    EDITTEXT        IDC_EDIT_ONUM,71,119,161,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_BUTTON_OK,60,166,50,14
+    GROUPBOX        "出库商品信息",IDC_STATIC,19,15,231,142
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,155,166,50,14
+    EDITTEXT        IDC_EDIT_PERSON,71,95,161,15,ES_AUTOHSCROLL
+    LTEXT           "现有数量",IDC_STATIC,33,75,33,8
+    EDITTEXT        IDC_EDIT_CNUM,71,71,161,15,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_VIEW DIALOG DISCARDABLE  0, 0, 348, 232
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查看商品信息"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_DISP,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,334,184
+    PUSHBUTTON      "确定",IDC_BUTTON_OK,143,201,50,14
+    EDITTEXT        IDC_EDIT_NUM,69,203,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "记录总数",IDC_STATIC,19,205,33,8
+END
+
+IDD_DIALOG_PASSWD DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改管理员密码"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "新密码",IDC_STATIC,34,26,25,8
+    EDITTEXT        IDC_EDIT_PASSWD1,70,23,61,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "重输",IDC_STATIC,34,47,17,8
+    EDITTEXT        IDC_EDIT_PASSWD2,70,44,61,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    GROUPBOX        "设置新密码",IDC_STATIC,7,7,173,57
+    DEFPUSHBUTTON   "确定",IDC_BUTTON_OK,63,73,50,14
+END
+
+IDD_DIALOG_ALERT DIALOG DISCARDABLE  0, 0, 302, 280
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "库存预警"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "低于最低预警线的商品",IDC_STATIC,7,7,288,109
+    LTEXT           "下列商品库存过低，请及时购买入库！",IDC_STATIC,46,20,
+                    192,8
+    CONTROL         "List1",IDC_LIST_LOWDISP,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,32,288,80
+    GROUPBOX        "高于最高预警线的商品",IDC_STATIC,7,133,288,109
+    LTEXT           "下列商品库存过盛，请尽快出库销售！",IDC_STATIC,46,146,
+                    192,8
+    CONTROL         "List1",IDC_LIST_HIGHDISP,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,158,288,80
+    DEFPUSHBUTTON   "确定(&O)",IDC_BUTTON_OK,118,250,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "GMS Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GMS\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GMS.EXE\0"
+            VALUE "ProductName", "GMS 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_GMS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 196
+    END
+
+    IDD_DIALOG_GOODS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_DIALOG_PROVIDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_DIALOG_IN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_DIALOG_OUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_DIALOG_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_DIALOG_PASSWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DIALOG_ALERT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 273
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP              BITMAP  DISCARDABLE     "res\\Blue hills.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 GMS(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\GMS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

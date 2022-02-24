@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GMS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/GMS.res" /d "NDEBUG" /d "_AFXDLL" "F:\已完成\章节(程序)\ch7\GMS\GMS.rc"" 
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP8A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/GMS.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\已完成\章节(程序)\ch7\GMS\AlertDlg.cpp"
+"F:\已完成\章节(程序)\ch7\GMS\GMS.cpp"
+"F:\已完成\章节(程序)\ch7\GMS\GMSDlg.cpp"
+"F:\已完成\章节(程序)\ch7\GMS\GoodsDlg.cpp"
+"F:\已完成\章节(程序)\ch7\GMS\InDlg.cpp"
+"F:\已完成\章节(程序)\ch7\GMS\LogManager.cpp"
+"F:\已完成\章节(程序)\ch7\GMS\MainDlg.cpp"
+"F:\已完成\章节(程序)\ch7\GMS\OutDlg.cpp"
+"F:\已完成\章节(程序)\ch7\GMS\PasswdDlg.cpp"
+"F:\已完成\章节(程序)\ch7\GMS\ProviderDlg.cpp"
+"F:\已完成\章节(程序)\ch7\GMS\ViewDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP8A.tmp" 
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP8B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/GMS.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\已完成\章节(程序)\ch7\GMS\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP8B.tmp" 
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP8C.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/GMS.pdb" /machine:I386 /out:"Release/GMS.exe" 
+".\Release\AlertDlg.obj"
+".\Release\GMS.obj"
+".\Release\GMSDlg.obj"
+".\Release\GoodsDlg.obj"
+".\Release\InDlg.obj"
+".\Release\LogManager.obj"
+".\Release\MainDlg.obj"
+".\Release\OutDlg.obj"
+".\Release\PasswdDlg.obj"
+".\Release\ProviderDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\ViewDlg.obj"
+".\Release\GMS.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP8C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+f:\已完成\章节(程序)\ch7\gms\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Compiling...
+AlertDlg.cpp
+GMS.cpp
+GMSDlg.cpp
+GoodsDlg.cpp
+InDlg.cpp
+LogManager.cpp
+MainDlg.cpp
+OutDlg.cpp
+PasswdDlg.cpp
+ProviderDlg.cpp
+ViewDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+GMS.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
