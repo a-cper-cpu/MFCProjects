@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: UGMS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP25C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/UGMS.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch10 本科生信息管理系统\UGMS\UGMSDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP25C.tmp" 
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP25D.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/UGMS.pdb" /machine:I386 /out:"Release/UGMS.exe" 
+".\Release\adodc.obj"
+".\Release\datagrid.obj"
+".\Release\PageCho.obj"
+".\Release\PageCou.obj"
+".\Release\PageStat.obj"
+".\Release\PageStu.obj"
+".\Release\PageWelcome.obj"
+".\Release\StdAfx.obj"
+".\Release\UGMS.obj"
+".\Release\UGMSDlg.obj"
+".\Release\UGMS.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP25D.tmp"
+<h3>Output Window</h3>
+Compiling...
+UGMSDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+UGMS.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
