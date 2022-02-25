@@ -1,0 +1,883 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TMS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TMS.ico"
+IDR_TMSTYPE             ICON    DISCARDABLE     "res\\TMSDoc.ico"
+IDI_ICON_MAIN           ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON_SUB            ICON    DISCARDABLE     "res\\icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\1fg.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 TMS(&A)...",             ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_CAR MENU DISCARDABLE 
+BEGIN
+    POPUP "CAR"
+    BEGIN
+        MENUITEM "增加汽车(&A)",                ID_MENUITEM_CARADD
+        MENUITEM "修改汽车(&M)",                ID_MENUITEM_CARMODIFY
+        MENUITEM "删除汽车(&D)",                ID_MENUITEM_CARDEL
+    END
+END
+
+IDR_MENU_DRIVER MENU DISCARDABLE 
+BEGIN
+    POPUP "Driver"
+    BEGIN
+        MENUITEM "增加司机(&A)",                ID_MENUITEM_DRIVERADD
+        MENUITEM "修改司机(&M)",                ID_MENUITEM_DRIVERMODIFY
+        MENUITEM "删除司机(&D)",                ID_MENUITEM_DRIVERDEL
+    END
+END
+
+IDR_MENU_CARDRIVER MENU DISCARDABLE 
+BEGIN
+    POPUP "Car-Driver"
+    BEGIN
+        MENUITEM "添加关系(&A)",                ID_MENUITEM_CDADD
+        MENUITEM "修改关系(&M)",                ID_MENUITEM_CDMODIFY
+        MENUITEM "删除关系(&D)",                ID_MENUITEM_CDDEL
+    END
+END
+
+IDR_MENU_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "车辆管理(&C)"
+    BEGIN
+        POPUP "车辆明细"
+        BEGIN
+            MENUITEM "增加车辆(&A)",                ID_MENUITEM_CARADD
+            MENUITEM "修改车辆(&M)",                ID_MENUITEM_CARMODIFY
+            MENUITEM "删除车辆(&D)",                ID_MENUITEM_CARDEL
+        END
+        POPUP "车辆所属"
+        BEGIN
+            MENUITEM "增加关系(&A)",                ID_MENUITEM_RELADD
+            MENUITEM "修改关系(&M)",                ID_MENUITEM_RELMODIFY
+            MENUITEM "删除关系(&D)",                ID_MENUITEM_RELDEL
+        END
+        POPUP "车辆费用"
+        BEGIN
+            MENUITEM "缴费(&P)",                    ID_MENUITEM_PAY
+        END
+    END
+    POPUP "司机管理(D)"
+    BEGIN
+        POPUP "司机明细"
+        BEGIN
+            MENUITEM "增加司机(&A)",                ID_MENUITEM_DRIVERADD
+            MENUITEM "修改司机(&M)",                ID_MENUITEM_DRIVERMODIFY
+            MENUITEM "删除司记(&D)",                ID_MENUITEM_DRIVERDEL
+        END
+        POPUP "违法记录"
+        BEGIN
+            MENUITEM "增加(&A)",                    ID_MENUITEM32801
+            MENUITEM "修改(&M)",                    ID_MENUITEM32802
+            MENUITEM "删除(&D)",                    ID_MENUITEM32803
+        END
+        POPUP "奖惩记录"
+        BEGIN
+            MENUITEM "增加(&A)",                    ID_MENUITEM32801
+            MENUITEM "修改(&M)",                    ID_MENUITEM32802
+            MENUITEM "删除(&D)",                    ID_MENUITEM32803
+        END
+    END
+    POPUP "其他管理(O)"
+    BEGIN
+        POPUP "法律法规"
+        BEGIN
+            MENUITEM "增加(&A)",                    ID_MENUITEM_LAWADD
+            MENUITEM "修改(&M)",                    ID_MENUITEM_LAWMODIFY
+            MENUITEM "删除(&D)",                    ID_MENUITEM_LAWDEL
+        END
+        POPUP "费用管理"
+        BEGIN
+            MENUITEM "增加(&A)",                    ID_MENUITEM_FEEADD
+            MENUITEM "修改(&M)",                    ID_MENUITEM_FEEMODIFY
+            MENUITEM "删除(&D)",                    ID_MENUITEM_FEEDEL
+        END
+        MENUITEM "修改密码",                    ID_MENUITEM_PASSWD
+    END
+    POPUP "相关帮助(&H)"
+    BEGIN
+        MENUITEM "关于 TMS(&A)...",             ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_CARFEE MENU DISCARDABLE 
+BEGIN
+    POPUP "CARFEE"
+    BEGIN
+        MENUITEM "添加车辆费用(&A)",            ID_MENUITEM_CARFEEADD
+        MENUITEM "修改车辆费用(&M)",            ID_MENUITEM_CARFEEMODIFY
+        MENUITEM "删除车辆费用(&D)",            ID_MENUITEM_CARFEEDL
+    END
+END
+
+IDR_MENU_DRIVERLAW MENU DISCARDABLE 
+BEGIN
+    POPUP "DRIVER-LAW"
+    BEGIN
+        MENUITEM "添加司机违法记录(&A)",        ID_MENUITEM_DRIVERLAWADD
+        MENUITEM "修改司机违法记录(&M)",        ID_MENUITEM_DRIVERLAWMODIFY
+        MENUITEM "删除司机违法记录(&D)",        ID_MENUITEM_DRIVERLAWDEL
+    END
+END
+
+IDR_MENU_DRIVERAWARD MENU DISCARDABLE 
+BEGIN
+    POPUP "DRIVER-AWARD"
+    BEGIN
+        MENUITEM "添加奖惩记录(&A)",            ID_MENUITEM_DRIVERAWARDADD
+        MENUITEM "修改奖惩记录(&M)",            ID_MENUITEM_DRIVERAWARDMODIFY
+
+        MENUITEM "删除奖惩记录(&D)",            ID_MENUITEM_DRIVERAWARDDEL
+    END
+END
+
+IDR_MENU_LAW MENU DISCARDABLE 
+BEGIN
+    POPUP "LAW"
+    BEGIN
+        MENUITEM "添加法规(&A)",                ID_MENUITEM_LAWADD
+        MENUITEM "修改法规(&M)",                ID_MENUITEM_LAWMODIFY
+        MENUITEM "删除法规(&D)",                ID_MENUITEM_LAWDEL
+    END
+END
+
+IDR_MENU_FEE MENU DISCARDABLE 
+BEGIN
+    POPUP "FEE"
+    BEGIN
+        MENUITEM "添加费用(&A)",                ID_MENUITEM_FEEADD
+        MENUITEM "修改费用(&M)",                ID_MENUITEM_FEEMODIFY
+        MENUITEM "删除费用(&D)",                ID_MENUITEM_FEEDEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TMS"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TMS 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_FORMVIEW_MAINITEM DIALOG DISCARDABLE  0, 0, 375, 268
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         146,IDC_STATIC,"Static",SS_BITMAP,7,7,361,254
+END
+
+IDD_DIALOG_CAR DIALOG DISCARDABLE  0, 0, 270, 156
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "车号",IDC_STATIC,27,25,17,8
+    EDITTEXT        IDC_EDIT_CARNO,54,21,56,14,ES_AUTOHSCROLL
+    LTEXT           "品牌",IDC_STATIC,27,48,17,8
+    EDITTEXT        IDC_EDIT_CARKIND,54,44,56,14,ES_AUTOHSCROLL
+    LTEXT           "颜色",IDC_STATIC,27,71,17,8
+    EDITTEXT        IDC_EDIT_CARCOLOR,54,67,56,14,ES_AUTOHSCROLL
+    LTEXT           "发动机号",IDC_STATIC,139,25,33,8
+    EDITTEXT        IDC_EDIT_ENGINENO,182,21,56,14,ES_AUTOHSCROLL
+    LTEXT           "底盘号",IDC_STATIC,139,49,25,8
+    EDITTEXT        IDC_EDIT_CLASISNO,182,45,56,14,ES_AUTOHSCROLL
+    LTEXT           "计价器号",IDC_STATIC,139,71,33,8
+    EDITTEXT        IDC_EDIT_METERNO,182,67,56,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定(&O)",IDC_BUTTON_OK,75,118,50,14
+    PUSHBUTTON      "取消(&C)",IDC_BUTTON_CANCEL,163,118,50,14
+    GROUPBOX        "车辆信息",IDC_STATIC,7,7,256,97
+END
+
+IDD_DIALOG_DRIVER DIALOG DISCARDABLE  0, 0, 270, 159
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "编号",IDC_STATIC,20,25,17,8
+    EDITTEXT        IDC_EDIT_NO,53,21,56,14,ES_AUTOHSCROLL
+    LTEXT           "姓名",IDC_STATIC,20,48,17,8
+    EDITTEXT        IDC_EDIT_NAME,53,44,56,14,ES_AUTOHSCROLL
+    LTEXT           "性别",IDC_STATIC,20,71,17,8
+    EDITTEXT        IDC_EDIT_SEX,53,67,56,14,ES_AUTOHSCROLL
+    LTEXT           "家庭住址",IDC_STATIC,132,25,33,8
+    EDITTEXT        IDC_EDIT_ADDRESS,175,21,56,14,ES_AUTOHSCROLL
+    LTEXT           "初领驾照",IDC_STATIC,132,49,33,8
+    LTEXT           "准驾车型",IDC_STATIC,132,71,33,8
+    EDITTEXT        IDC_EDIT_KIND,175,67,56,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定(&O)",IDC_BUTTON_OK,63,127,50,14
+    PUSHBUTTON      "取消(&C)",IDC_BUTTON_CANCEL,152,127,50,14
+    GROUPBOX        "驾驶员信息",IDC_STATIC,7,7,256,110
+    LTEXT           "身份证",IDC_STATIC,20,93,25,8
+    EDITTEXT        IDC_EDIT_ID,53,90,56,14,ES_AUTOHSCROLL
+    LTEXT           "联系电话",IDC_STATIC,132,93,33,8
+    EDITTEXT        IDC_EDIT_PHONE,175,89,56,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,175,44,56,14
+END
+
+IDD_DIALOG_CARDRIVER DIALOG DISCARDABLE  0, 0, 302, 163
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "车辆编号",IDC_STATIC,40,30,33,8
+    COMBOBOX        IDC_COMBO_CARNO,85,27,96,45,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "司机编号",IDC_STATIC,40,54,33,8
+    COMBOBOX        IDC_COMBO_DRIVERNO,85,50,96,48,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "司机名称",IDC_STATIC,40,78,33,8
+    EDITTEXT        IDC_EDIT_DRIVERNAME,85,73,66,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "是否任职",IDC_STATIC,40,102,33,8
+    COMBOBOX        IDC_COMBO_ISWORK,85,98,48,41,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "车辆所属关系",IDC_STATIC,7,7,288,116
+    PUSHBUTTON      "确定(&O)",IDC_BUTTON_OK,75,132,50,14
+    PUSHBUTTON      "取消(&C)",IDC_BUTTON_CANCEL,163,132,50,14
+END
+
+IDD_DIALOG_PASSWD DIALOG DISCARDABLE  0, 0, 190, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改密码"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "新密码",IDC_STATIC,26,30,25,8
+    EDITTEXT        IDC_EDIT_PASSWD1,59,27,75,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "重输",IDC_STATIC,26,57,17,8
+    EDITTEXT        IDC_EDIT_PASSWD2,59,53,75,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    GROUPBOX        "设置新密码",IDC_STATIC,7,7,176,79
+    DEFPUSHBUTTON   "确定(&O)",IDC_BUTTON_OK,68,94,50,14
+END
+
+IDD_DIALOG_LOGIN DIALOGEX 0, 0, 367, 292
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         146,IDC_STATIC,"Static",SS_BITMAP,7,7,353,253
+    LTEXT           "用户名",IDC_STATIC,17,269,25,8,0,WS_EX_TRANSPARENT
+    LTEXT           "密码",IDC_STATIC,113,269,17,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_LOGINNAME,46,266,56,14,ES_AUTOHSCROLL,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_PASSWD,135,266,56,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "登录",IDC_BUTTON_OK,247,266,42,13,BS_FLAT,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,295,266,42,13,BS_FLAT,
+                    WS_EX_TRANSPARENT
+END
+
+IDD_DIALOG_CARFEE DIALOG DISCARDABLE  0, 0, 273, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "车辆编号",IDC_STATIC,40,30,33,8
+    COMBOBOX        IDC_COMBO_CARNO,85,27,96,45,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "费用编号",IDC_STATIC,40,54,33,8
+    COMBOBOX        IDC_COMBO_FEENO,85,50,96,48,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "费用名称",IDC_STATIC,40,77,33,8
+    EDITTEXT        IDC_EDIT_FEENAME,85,73,66,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "起始时间",IDC_STATIC,40,100,33,8
+    GROUPBOX        "车辆费用",IDC_STATIC,7,7,259,134
+    PUSHBUTTON      "确定(&O)",IDC_BUTTON_OK,64,151,50,14
+    PUSHBUTTON      "取消(&C)",IDC_BUTTON_CANCEL,153,152,50,14
+    CONTROL         "DateTimePicker1",IDC_DATE_BEGIN,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,85,98,96,12
+    LTEXT           "终止日期",IDC_STATIC,40,122,33,8
+    CONTROL         "DateTimePicker1",IDC_DATE_END,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,85,119,96,12
+END
+
+IDD_DIALOG_DRIVERPUNISH DIALOG DISCARDABLE  0, 0, 273, 232
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "司机号",IDC_STATIC,40,30,25,8
+    COMBOBOX        IDC_COMBO_DRIVERNO,85,27,96,45,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "法规号",IDC_STATIC,40,54,25,8
+    COMBOBOX        IDC_COMBO_LAWNO,85,50,96,48,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "发生地点",IDC_STATIC,40,77,33,8
+    EDITTEXT        IDC_EDIT_ADDRESS,85,73,66,14,ES_AUTOHSCROLL
+    LTEXT           "发生时间",IDC_STATIC,40,100,33,8
+    GROUPBOX        "违法记录",IDC_STATIC,7,7,259,173
+    PUSHBUTTON      "确定(&O)",IDC_BUTTON_OK,61,191,50,14
+    PUSHBUTTON      "取消(&C)",IDC_BUTTON_CANCEL,151,191,50,14
+    CONTROL         "DateTimePicker1",IDC_DATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,85,98,96,12
+    LTEXT           "是否处理",IDC_STATIC,40,122,33,8
+    COMBOBOX        IDC_COMBO_TREATSTATE,85,118,57,48,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "备注",IDC_STATIC,40,141,17,8
+    EDITTEXT        IDC_EDIT_MEMO,85,137,99,33,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_DRIVERAWARD DIALOG DISCARDABLE  0, 0, 302, 184
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "司机号",IDC_STATIC,40,30,25,8
+    COMBOBOX        IDC_COMBO_DRIVERNO,85,27,96,45,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "奖惩号",IDC_STATIC,40,54,25,8
+    COMBOBOX        IDC_COMBO_AWARDNO,85,50,96,48,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "内容",IDC_STATIC,40,78,17,8
+    EDITTEXT        IDC_EDIT_CONTENT,85,73,144,14,ES_AUTOHSCROLL
+    LTEXT           "备注",IDC_STATIC,40,102,17,8
+    GROUPBOX        "奖惩记录",IDC_STATIC,7,7,288,139
+    PUSHBUTTON      "确定(&O)",IDC_BUTTON_OK,75,153,50,14
+    PUSHBUTTON      "取消(&C)",IDC_BUTTON_CANCEL,163,153,50,14
+    EDITTEXT        IDC_EDIT_MEMO,85,99,144,40,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_LAW DIALOG DISCARDABLE  0, 0, 270, 156
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "法规号",IDC_STATIC,20,25,25,8
+    EDITTEXT        IDC_EDIT_NO,53,21,56,14,ES_AUTOHSCROLL
+    LTEXT           "法规名",IDC_STATIC,20,48,25,8
+    EDITTEXT        IDC_EDIT_NAME,53,44,56,14,ES_AUTOHSCROLL
+    LTEXT           "施法部门",IDC_STATIC,20,71,33,8
+    EDITTEXT        IDC_EDIT_DEPARTMENT,53,67,56,14,ES_AUTOHSCROLL
+    LTEXT           "罚点",IDC_STATIC,132,25,17,8
+    EDITTEXT        IDC_EDIT_POINT,175,21,56,14,ES_AUTOHSCROLL
+    LTEXT           "扣驾驶本",IDC_STATIC,132,49,33,8
+    PUSHBUTTON      "确定(&O)",IDC_BUTTON_OK,63,127,50,14
+    PUSHBUTTON      "取消(&C)",IDC_BUTTON_CANCEL,152,127,50,14
+    GROUPBOX        "法律法规",IDC_STATIC,7,7,256,110
+    LTEXT           "罚钱",IDC_STATIC,20,93,17,8
+    EDITTEXT        IDC_EDIT_MONEY,53,90,56,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_ISBOOK,175,48,56,30,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_FEE DIALOG DISCARDABLE  0, 0, 283, 160
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "费用号",IDC_STATIC,20,25,25,8
+    EDITTEXT        IDC_EDIT_NO,62,21,56,14,ES_AUTOHSCROLL
+    LTEXT           "费用名",IDC_STATIC,20,48,25,8
+    EDITTEXT        IDC_EDIT_NAME,62,44,82,14,ES_AUTOHSCROLL
+    LTEXT           "收费部门",IDC_STATIC,20,71,33,8
+    EDITTEXT        IDC_EDIT_DEPARTMENT,62,67,82,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定(&O)",IDC_BUTTON_OK,63,127,50,14
+    PUSHBUTTON      "取消(&C)",IDC_BUTTON_CANCEL,152,127,50,14
+    GROUPBOX        "法律法规",IDC_STATIC,7,7,256,110
+    LTEXT           "收费额度",IDC_STATIC,20,93,33,8
+    EDITTEXT        IDC_EDIT_MONEY,62,90,56,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TMS Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TMS\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TMS.EXE\0"
+            VALUE "ProductName", "TMS 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FORMVIEW_MAINITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_DIALOG_CAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_DIALOG_DRIVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_DIALOG_CARDRIVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_DIALOG_PASSWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_DIALOG_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 285
+    END
+
+    IDD_DIALOG_CARFEE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_DIALOG_DRIVERPUNISH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_DIALOG_DRIVERAWARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_DIALOG_LAW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_DIALOG_FEE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_CARDRIVER DLGINIT
+BEGIN
+    IDC_COMBO_ISWORK, 0x403, 3, 0
+0xf1b7, "\000" 
+    IDC_COMBO_ISWORK, 0x403, 3, 0
+0xc7ca, "\000" 
+    0
+END
+
+IDD_DIALOG_DRIVERPUNISH DLGINIT
+BEGIN
+    IDC_COMBO_TREATSTATE, 0x403, 3, 0
+0xf1b7, "\000" 
+    IDC_COMBO_TREATSTATE, 0x403, 3, 0
+0xc7ca, "\000" 
+    0
+END
+
+IDD_DIALOG_LAW DLGINIT
+BEGIN
+    IDC_COMBO_ISBOOK, 0x403, 3, 0
+0xf1b7, "\000" 
+    IDC_COMBO_ISBOOK, 0x403, 3, 0
+0xc7ca, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "TMS\n\nTMS\n\n\nTMS.Document\nTMS Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "TMS"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\TMS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

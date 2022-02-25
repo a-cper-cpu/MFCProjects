@@ -1,0 +1,50 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TMS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP344.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/TMS.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch11 出租车管理系统\TMS\SubListView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP344.tmp" 
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP345.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/TMS.pdb" /machine:I386 /out:"Release/TMS.exe" 
+".\Release\CarDlg.obj"
+".\Release\CarDriverDlg.obj"
+".\Release\DriverDlg.obj"
+".\Release\LeftTreeView.obj"
+".\Release\LoginDlg.obj"
+".\Release\MainFrm.obj"
+".\Release\MainItemView.obj"
+".\Release\PasswdDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\SubListView.obj"
+".\Release\TMS.obj"
+".\Release\TMSDoc.obj"
+".\Release\TMSView.obj"
+".\Release\TMS.res"
+".\Release\CarFeeDlg.obj"
+".\Release\DriverLawDlg.obj"
+".\Release\DriverAwardDlg.obj"
+".\Release\LawDlg.obj"
+".\Release\FeeDlg.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP345.tmp"
+<h3>Output Window</h3>
+Compiling...
+SubListView.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+TMS.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
