@@ -1,0 +1,43 @@
+// ReturnDlg.cpp : implementation file
+//
+
+#include "stdafx.h"
+#include "Library.h"
+#include "ReturnDlg.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#undef THIS_FILE
+static char THIS_FILE[] = __FILE__;
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+// CReturnDlg dialog
+
+
+CReturnDlg::CReturnDlg(CWnd* pParent /*=NULL*/)
+	: CDialog(CReturnDlg::IDD, pParent)
+{
+	//{{AFX_DATA_INIT(CReturnDlg)
+		// NOTE: the ClassWizard will add member initialization here
+	//}}AFX_DATA_INIT
+}
+
+
+void CReturnDlg::DoDataExchange(CDataExchange* pDX)
+{
+	CDialog::DoDataExchange(pDX);
+	//{{AFX_DATA_MAP(CReturnDlg)
+		// NOTE: the ClassWizard will add DDX and DDV calls here
+	//}}AFX_DATA_MAP
+}
+
+
+BEGIN_MESSAGE_MAP(CReturnDlg, CDialog)
+	//{{AFX_MSG_MAP(CReturnDlg)
+		// NOTE: the ClassWizard will add message map macros here
+	//}}AFX_MSG_MAP
+END_MESSAGE_MAP()
+
+/////////////////////////////////////////////////////////////////////////////
+// CReturnDlg message handlers

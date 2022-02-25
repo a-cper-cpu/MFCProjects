@@ -1,0 +1,351 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Library.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Library.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Library"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Library 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_LIBRARY_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Library(图书馆管理系统)"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         133,IDC_STATIC,"Static",SS_BITMAP,81,23,153,13
+    PUSHBUTTON      "图书资料",IDC_BUTTON_BOOK,37,59,50,14
+    PUSHBUTTON      "读者资料",IDC_BUTTON_READER,37,84,50,14
+    PUSHBUTTON      "借书管理",IDC_BUTTON_BORROW,37,109,50,14
+    PUSHBUTTON      "还书管理",IDC_BUTTON_RETURN,37,134,50,14
+    PUSHBUTTON      "退出",IDC_BUTTON_GOODBYE,37,159,50,14
+    CTEXT           "图书信息的管理和维护",IDC_STATIC,127,56,175,17,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "读者信息的管理和维护",IDC_STATIC,127,82,175,17,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "借书服务管理和维护",IDC_STATIC,127,108,175,17,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "还书服务管理和维护",IDC_STATIC,127,134,175,17,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "退出系统",IDC_STATIC,127,160,175,17,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_LOGIN DIALOGEX 0, 0, 186, 118
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "系统登录"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "请输入用户名和密码",IDC_STATIC,8,17,81,12
+    RTEXT           "用户名",IDC_STATIC,27,37,40,8
+    RTEXT           "密码    ",IDC_STATIC,38,53,44,14
+    EDITTEXT        IDC_LOGIN_NAME,85,33,83,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOGIN_PASSWORD,85,51,83,13,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登录[&L]",IDC_CONFIRM,14,85,71,15
+    PUSHBUTTON      "取消[&C]",IDC_CANCEL,99,84,71,16
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,9,30,163,39
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,10,81,162,22
+END
+
+IDD_DIALOG_BOOK DIALOGEX 0, 0, 379, 184
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+CAPTION "图书信息"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_BOOKNAME_Q,88,19,114,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BOOKID_Q,251,18,70,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BOOKID,213,69,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BOOKNAME,105,55,177,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AUTHOR,105,69,63,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PRESS,105,84,63,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PRESSDATE,213,83,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FLAG_BORROW,105,100,63,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,14,11,351,28
+    LTEXT           "书名",IDC_STATIC,65,21,16,11
+    LTEXT           "书籍条码",IDC_STATIC,214,19,36,11
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,14,49,351,72
+    RTEXT           "书名",IDC_STATIC,62,57,36,11
+    RTEXT           "书籍条码",IDC_STATIC,174,71,36,11
+    RTEXT           "作者",IDC_STATIC,62,72,36,11
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,14,130,351,47
+    PUSHBUTTON      "第一条[&F]",IDC_FIRST,28,135,44,15
+    PUSHBUTTON      "上一条(&P]",IDC_PRIOR,77,135,44,15
+    PUSHBUTTON      "下一条[&N]",IDC_NEXT,126,135,44,15
+    PUSHBUTTON      "末一条(&L]",IDC_LAST,175,135,44,15
+    PUSHBUTTON      "增加[&N]",IDC_NEW,28,156,44,15
+    PUSHBUTTON      "修改[&E]",IDC_EDIT,77,156,44,15
+    PUSHBUTTON      "保存[&S]",IDC_SAVE,241,146,35,15
+    PUSHBUTTON      "取消[&C]",IDC_CANCEL_REC,281,146,35,15
+    PUSHBUTTON      "查询[&Q]",IDC_ENQUERY,175,156,44,15
+    PUSHBUTTON      "删除[&D]",IDC_DELETE,126,156,44,15
+    PUSHBUTTON      "退出[&X]",IDC_EXIT,321,146,35,15
+    RTEXT           "出版社",IDC_STATIC,62,87,36,11
+    RTEXT           "尚能借出",IDC_STATIC,62,102,36,11
+    RTEXT           "出版日期",IDC_STATIC,174,85,36,11
+    LTEXT           "Y/M/D",IDC_STATIC,291,86,21,8
+END
+
+IDD_DIALOG_READER DIALOGEX 0, 0, 391, 214
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+CAPTION "读者信息"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,14,12,351,28
+    LTEXT           "读者姓名",IDC_STATIC,63,20,36,11
+    LTEXT           "读者条码",IDC_STATIC,171,19,36,11
+    EDITTEXT        IDC_READER_NAME_FOR_Q,100,18,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_READER_ID_FOR_Q,208,17,70,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,14,53,351,72
+    LTEXT           "读者姓名",IDC_STATIC,170,75,36,11
+    LTEXT           "读者条码",IDC_STATIC,64,76,36,11
+    LTEXT           "身份证号",IDC_STATIC,64,90,36,11
+    EDITTEXT        IDC_READER_ID,100,74,63,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_READER_NAME,209,74,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IDCARD,100,88,180,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,14,130,351,47
+    PUSHBUTTON      "第一条[&F]",IDC_FIRST,28,135,44,15
+    PUSHBUTTON      "上一条(&P]",IDC_PRIOR,77,135,44,15
+    PUSHBUTTON      "下一条[&N]",IDC_NEXT,126,135,44,15
+    PUSHBUTTON      "末一条(&L]",IDC_LAST,175,135,44,15
+    PUSHBUTTON      "增加[&N]",IDC_NEW,28,156,44,15
+    PUSHBUTTON      "修改[&E]",IDC_EDIT,77,156,44,15
+    PUSHBUTTON      "保存[&S]",IDC_SAVE,241,146,35,15
+    PUSHBUTTON      "取消[&C]",IDC_CANCEL_REC,281,146,35,15
+    PUSHBUTTON      "查询[&Q]",IDC_ENQUERY,175,156,44,15
+    PUSHBUTTON      "删除[&D]",IDC_DELETE,126,156,44,15
+    PUSHBUTTON      "退出[&X]",IDC_EXIT,321,146,35,15
+END
+
+IDD_DIALOG_BORROW DIALOGEX 0, 0, 237, 121
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+CAPTION "借书服务"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,16,30,205,24
+    LTEXT           "读者编码",IDC_STATIC,22,37,32,9
+    LTEXT           "书籍编码",IDC_STATIC,121,38,36,9
+    EDITTEXT        IDC_READER_ID,60,36,54,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BOOK_ID,158,36,54,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,16,67,205,24
+    DEFPUSHBUTTON   "确定[&O]",IDC_CONFIRM,27,74,63,12
+    PUSHBUTTON      "取消[&C]",IDC_CANCEL,122,74,63,12
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Library Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Library\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Library.EXE\0"
+            VALUE "ProductName", "Library 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_LIBRARY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_DIALOG_LOGIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Library(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Library.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

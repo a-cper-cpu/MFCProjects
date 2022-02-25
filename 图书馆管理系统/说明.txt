@@ -1,0 +1,18 @@
+编译源程序：
+1.  去掉“只读”属性。
+2.  复制数据库Library.mdb到任意位置。
+3.  为Library.mdb建一个系统ODBC数据源：Library。
+4.  编译不受源文件位置和数据库位置的影响。即，Library的整个工程复制到任何地方都可编译。
+
+运行Realease：
+1.  确认已安装VC 6.0。
+2.  复制数据库Library.mdb到任意位置。
+3.  为Library.mdb建一个系统ODBC数据源：Library。
+4.  运行程序的Debug版或者Release版。
+5.  参考该书第9章的内容操作。
+
+登录：
+用户名：admin	
+密码：admin
+
+

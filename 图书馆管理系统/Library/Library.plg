@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Library - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/Library.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch09 图书馆管理系统\Library\Library.rc"" 
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP225.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Library.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch09 图书馆管理系统\Library\BookDataSet.cpp"
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch09 图书馆管理系统\Library\BookDlg.cpp"
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch09 图书馆管理系统\Library\BorrowDataSet.cpp"
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch09 图书馆管理系统\Library\BorrowDlg.cpp"
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch09 图书馆管理系统\Library\BorrowSet.cpp"
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch09 图书馆管理系统\Library\ClerkDataSet.cpp"
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch09 图书馆管理系统\Library\Library.cpp"
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch09 图书馆管理系统\Library\LibraryDlg.cpp"
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch09 图书馆管理系统\Library\LoginDlg.cpp"
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch09 图书馆管理系统\Library\ReaderDataSet.cpp"
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch09 图书馆管理系统\Library\ReaderDlg.cpp"
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch09 图书馆管理系统\Library\ReturnDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP225.tmp" 
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP226.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Library.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Simply\桌面\VC课程案例精编\ch09 图书馆管理系统\Library\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP226.tmp" 
+Creating temporary file "C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP227.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Library.pdb" /machine:I386 /out:"Release/Library.exe" 
+".\Release\BookDataSet.obj"
+".\Release\BookDlg.obj"
+".\Release\BorrowDataSet.obj"
+".\Release\BorrowDlg.obj"
+".\Release\BorrowSet.obj"
+".\Release\ClerkDataSet.obj"
+".\Release\Library.obj"
+".\Release\LibraryDlg.obj"
+".\Release\LoginDlg.obj"
+".\Release\ReaderDataSet.obj"
+".\Release\ReaderDlg.obj"
+".\Release\ReturnDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\Library.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Simply\LOCALS~1\Temp\RSP227.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BookDataSet.cpp
+BookDlg.cpp
+BorrowDataSet.cpp
+BorrowDlg.cpp
+BorrowSet.cpp
+ClerkDataSet.cpp
+Library.cpp
+LibraryDlg.cpp
+LoginDlg.cpp
+ReaderDataSet.cpp
+ReaderDlg.cpp
+ReturnDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Library.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
